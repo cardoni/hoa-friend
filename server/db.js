@@ -12,6 +12,7 @@ db.exec(`
   CREATE TABLE IF NOT EXISTS shelves (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
+    bookcase INTEGER NOT NULL DEFAULT 1,
     position REAL NOT NULL,
     created_at TEXT NOT NULL DEFAULT (datetime('now'))
   );
@@ -36,5 +37,12 @@ db.exec(`
 
   CREATE INDEX IF NOT EXISTS idx_books_shelf ON books(shelf_id, position, stack_order);
 `);
+
+// Migration: add shelves.bookcase to databases created before bookcases
+// existed (CREATE TABLE IF NOT EXISTS won't alter an existing table).
+const shelfCols = db.prepare(`PRAGMA table_info(shelves)`).all();
+if (!shelfCols.some((c) => c.name === 'bookcase')) {
+  db.exec(`ALTER TABLE shelves ADD COLUMN bookcase INTEGER NOT NULL DEFAULT 1`);
+}
 
 module.exports = db;

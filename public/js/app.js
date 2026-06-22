@@ -207,9 +207,29 @@
       booksByShelf.get(book.shelf_id).push(book);
     }
 
-    shelvesEl.innerHTML = '';
+    // Group shelves into bookcases (rendered side by side, each its own
+    // top-to-bottom column of shelves), mirroring the physical room.
+    const byBookcase = new Map();
     for (const shelf of shelves) {
-      shelvesEl.appendChild(renderShelf(shelf, booksByShelf.get(shelf.id) || []));
+      const bc = shelf.bookcase || 1;
+      if (!byBookcase.has(bc)) byBookcase.set(bc, []);
+      byBookcase.get(bc).push(shelf);
+    }
+
+    shelvesEl.innerHTML = '';
+    for (const [bc, bcShelves] of [...byBookcase.entries()].sort((a, b) => a[0] - b[0])) {
+      const caseEl = document.createElement('div');
+      caseEl.className = 'bookcase';
+
+      const label = document.createElement('p');
+      label.className = 'bookcase-label';
+      label.textContent = `Bookcase ${bc}`;
+      caseEl.appendChild(label);
+
+      for (const shelf of bcShelves) {
+        caseEl.appendChild(renderShelf(shelf, booksByShelf.get(shelf.id) || []));
+      }
+      shelvesEl.appendChild(caseEl);
     }
   }
 

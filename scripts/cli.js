@@ -33,12 +33,15 @@ async function main() {
 
   switch (command) {
     case 'add-shelf': {
+      const bookcase = Number(args.bookcase || 1);
       const position =
         args.position ??
-        db.prepare('SELECT COALESCE(MAX(position), 0) + 1 AS p FROM shelves').get().p;
+        db
+          .prepare('SELECT COALESCE(MAX(position), 0) + 1 AS p FROM shelves WHERE bookcase = ?')
+          .get(bookcase).p;
       const result = db
-        .prepare('INSERT INTO shelves (name, position) VALUES (?, ?)')
-        .run(args.name, position);
+        .prepare('INSERT INTO shelves (name, bookcase, position) VALUES (?, ?, ?)')
+        .run(args.name, bookcase, position);
       console.log(db.prepare('SELECT * FROM shelves WHERE id = ?').get(result.lastInsertRowid));
       break;
     }
