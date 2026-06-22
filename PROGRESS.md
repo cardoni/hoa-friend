@@ -13,10 +13,11 @@ machine to reconstruct the shelf.
 | 1 (top) | Philosophy, Harry Potter & magic | `scripts/seed_shelf1.js` | 39 | Transcribed; 6 pending barcodes |
 | 2 | Philosophy, business & misc | `scripts/seed_shelf2.js` | 38 | Transcribed; 3 pending barcodes |
 | 3 | Recovery, philosophy & self-help | `scripts/seed_shelf3.js` | 40 | Transcribed; 3 pending barcodes |
-| 4 | — | — | — | **Next up — awaiting photo** |
-| 5+ | — | — | — | Not yet photographed |
+| 4 | Ethics, philosophy & textbooks | `scripts/seed_shelf4.js` | 36 | Transcribed; 5 pending barcodes |
+| 5 | — | — | — | **Next up — awaiting photo** |
+| 6+ | — | — | — | Not yet photographed |
 
-**Running totals:** 3 shelves · 117 items · 12 awaiting barcodes.
+**Running totals:** 4 shelves · 153 items · 17 awaiting barcodes.
 
 ## Rebuild / view
 
@@ -60,6 +61,19 @@ position, until a barcode photo resolves the ISBN:
 
 - Center stack: *Felony Juggler / Penn Jillette* (orange flat book)
 - *Amazing Grace* (David Wolfe & Nick Good) and *Create-A-Book* are softer reads
+
+## Shelf 4 — pending identification (need a barcode photo)
+
+1. Red hardcover lying flat on top of the Dave Weckl drum book
+2. Cluster of thin white booklets/pamphlets between Arnold and the textbooks
+3. Pale book reading "...Latin and Antiquities..." (+ a year)
+4. Thin blue "...enstein: A Very Short Introduction" in the right stack
+5. Blank notebooks/sketchbooks on top of the right stack (likely not books)
+
+## Possible duplicates / photo overlap to confirm
+
+- *The Moral Landscape* (Sam Harris): on shelf 3 (center stack) and shelf 4 (vertical)
+- *Morality in Practice* (Sterba): shelf 2 (3rd ed.) and shelf 4 (6th ed.) — likely two editions
 
 ## Reads worth double-checking on Shelf 1
 
