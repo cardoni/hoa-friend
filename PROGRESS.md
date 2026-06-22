@@ -17,9 +17,22 @@ machine to reconstruct the shelf.
 | 5 | Atheism, philosophy, business & critical thinking | `scripts/seed_shelf5.js` | 39 | Transcribed; 2 pending barcodes |
 | 6 (last of bookcase 1) | Yearbooks, LSAT prep, logic & tech | `scripts/seed_shelf6.js` | 40 | Transcribed; 1 pending barcode |
 
-**Bookcase 1 (leftmost) complete — 6 shelves.** Next bookcase to the right not yet photographed.
+**Bookcase 1 (leftmost) complete — 6 shelves.**
 
-**Running totals:** 6 shelves · 232 items · 20 awaiting barcodes.
+### Bookcase 2 (skinnier; same 6-row height as bookcase 1)
+
+| Row | Shelf | Seed script | Items | Status |
+|-----|-------|-------------|-------|--------|
+| 1 (top) | Self-help & skepticism | `scripts/seed_bc2_shelf1.js` | 16 | Transcribed; 0 pending |
+| 2 | Philosophy & science | `scripts/seed_bc2_shelf2.js` | 17 | Transcribed; 2 pending |
+| 3 | — | — | — | **Next up — awaiting photo** |
+| 4–6 | — | — | — | Not yet photographed |
+
+> Photo 7 was shot in portrait but carried an EXIF orientation flag (rotate 90°);
+> the seed scripts reflect the EXIF-corrected reading. Future bookcase-2 photos
+> are framed 2–3 rows at a time.
+
+**Running totals:** 2 bookcases · 8 shelves · 265 items · 22 awaiting barcodes.
 
 ## Rebuild / view
 
@@ -92,10 +105,16 @@ position, until a barcode photo resolves the ISBN:
   exact lesson numbers and any duplicates are approximate
 - Westlake High School yearbook volume numbers/years inferred from partial spines
 
+## Bookcase 2 — pending identification (need a barcode photo)
+
+1. Thin "...to Outdoor Cooking" guidebook (bc2 shelf 2, between the standing books and the stack)
+2. Thin red book / loose papers on top of the bc2 shelf 2 right stack
+
 ## Possible duplicates / photo overlap to confirm
 
 - *The Moral Landscape* (Sam Harris): on shelf 3 (center stack) and shelf 4 (vertical)
 - *Morality in Practice* (Sterba): shelf 2 (3rd ed.) and shelf 4 (6th ed.) — likely two editions
+- *Moral Minds* (Marc D. Hauser): bookcase 1 shelf 4 and bookcase 2 shelf 2 — possible duplicate
 
 ## Reads worth double-checking on Shelf 1
 
