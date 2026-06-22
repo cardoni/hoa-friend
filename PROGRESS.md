@@ -25,14 +25,20 @@ machine to reconstruct the shelf.
 |-----|-------|-------------|-------|--------|
 | 1 (top) | Self-help & skepticism | `scripts/seed_bc2_shelf1.js` | 16 | Transcribed; 0 pending |
 | 2 | Philosophy & science | `scripts/seed_bc2_shelf2.js` | 17 | Transcribed; 2 pending |
-| 3 | — | — | — | **Next up — awaiting photo** |
-| 4–6 | — | — | — | Not yet photographed |
+| 3 | Ethics, business & philosophy | `scripts/seed_bc2_shelf3.js` | 19 | Transcribed; 1 pending |
+| 4 | Philosophy of religion & reference | `scripts/seed_bc2_shelf4.js` | 12 | Transcribed; 1 pending |
+| 5 | — | — | — | **Next up — awaiting photo** |
+| 6 | — | — | — | Not yet photographed |
 
 > Photo 7 was shot in portrait but carried an EXIF orientation flag (rotate 90°);
 > the seed scripts reflect the EXIF-corrected reading. Future bookcase-2 photos
 > are framed 2–3 rows at a time.
 
-**Running totals:** 2 bookcases · 8 shelves · 265 items · 22 awaiting barcodes.
+Bookcase 2 pending (need barcodes): yellow flat-top book by *On Bullshit*
+(bc2 shelf 3); brown leather classic flat on top (bc2 shelf 4) — plus the
+two from shelves 1-2 above.
+
+**Running totals:** 2 bookcases · 10 shelves · 296 items · 24 awaiting barcodes.
 
 ## Rebuild / view
 
