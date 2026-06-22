@@ -14,10 +14,11 @@ machine to reconstruct the shelf.
 | 2 | Philosophy, business & misc | `scripts/seed_shelf2.js` | 38 | Transcribed; 3 pending barcodes |
 | 3 | Recovery, philosophy & self-help | `scripts/seed_shelf3.js` | 40 | Transcribed; 3 pending barcodes |
 | 4 | Ethics, philosophy & textbooks | `scripts/seed_shelf4.js` | 36 | Transcribed; 5 pending barcodes |
-| 5 | — | — | — | **Next up — awaiting photo** |
-| 6+ | — | — | — | Not yet photographed |
+| 5 | Atheism, philosophy, business & critical thinking | `scripts/seed_shelf5.js` | 39 | Transcribed; 2 pending barcodes |
+| 6 | — | — | — | **Next up — awaiting photo** |
+| 7+ | — | — | — | Not yet photographed |
 
-**Running totals:** 4 shelves · 153 items · 17 awaiting barcodes.
+**Running totals:** 5 shelves · 192 items · 19 awaiting barcodes.
 
 ## Rebuild / view
 
@@ -69,6 +70,16 @@ position, until a barcode photo resolves the ISBN:
 3. Pale book reading "...Latin and Antiquities..." (+ a year)
 4. Thin blue "...enstein: A Very Short Introduction" in the right stack
 5. Blank notebooks/sketchbooks on top of the right stack (likely not books)
+
+## Shelf 5 — pending identification (need a barcode photo)
+
+1. A couple of dark/red books in the center stack with no legible spines
+2. Blank spiral/wire-o bound book near the top of the center stack
+
+## Reads worth double-checking on Shelf 5
+
+- *Coffee with Mozart* and *Campground Cookery* (Kübler) are softer reads
+- Two copies of *god is not Great* (Hitchens) and two APA Publication Manuals — confirm both are really present
 
 ## Possible duplicates / photo overlap to confirm
 
