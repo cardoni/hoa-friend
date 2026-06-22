@@ -15,10 +15,11 @@ machine to reconstruct the shelf.
 | 3 | Recovery, philosophy & self-help | `scripts/seed_shelf3.js` | 40 | Transcribed; 3 pending barcodes |
 | 4 | Ethics, philosophy & textbooks | `scripts/seed_shelf4.js` | 36 | Transcribed; 5 pending barcodes |
 | 5 | Atheism, philosophy, business & critical thinking | `scripts/seed_shelf5.js` | 39 | Transcribed; 2 pending barcodes |
-| 6 | — | — | — | **Next up — awaiting photo** |
-| 7+ | — | — | — | Not yet photographed |
+| 6 (last of bookcase 1) | Yearbooks, LSAT prep, logic & tech | `scripts/seed_shelf6.js` | 40 | Transcribed; 1 pending barcode |
 
-**Running totals:** 5 shelves · 192 items · 19 awaiting barcodes.
+**Bookcase 1 (leftmost) complete — 6 shelves.** Next bookcase to the right not yet photographed.
+
+**Running totals:** 6 shelves · 232 items · 20 awaiting barcodes.
 
 ## Rebuild / view
 
@@ -80,6 +81,16 @@ position, until a barcode photo resolves the ISBN:
 
 - *Coffee with Mozart* and *Campground Cookery* (Kübler) are softer reads
 - Two copies of *god is not Great* (Hitchens) and two APA Publication Manuals — confirm both are really present
+
+## Shelf 6 — pending identification (need a barcode photo)
+
+1. Plain white book in the left horizontal stack (no legible spine)
+
+## Reads worth double-checking on Shelf 6
+
+- The TestMasters LSAT set (~22 blue volumes) is shelved out of numeric order;
+  exact lesson numbers and any duplicates are approximate
+- Westlake High School yearbook volume numbers/years inferred from partial spines
 
 ## Possible duplicates / photo overlap to confirm
 
