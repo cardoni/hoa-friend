@@ -11,8 +11,9 @@ machine to reconstruct the shelf.
 | Row | Shelf | Seed script | Items | Status |
 |-----|-------|-------------|-------|--------|
 | 1 (top) | Philosophy, Harry Potter & magic | `scripts/seed_shelf1.js` | 39 | Transcribed; 6 pending barcodes |
-| 2 | — | — | — | **Next up — awaiting photo** |
-| 3+ | — | — | — | Not yet photographed |
+| 2 | Philosophy, business & misc | `scripts/seed_shelf2.js` | 38 | Transcribed; 3 pending barcodes |
+| 3 | — | — | — | **Next up — awaiting photo** |
+| 4+ | — | — | — | Not yet photographed |
 
 ## Rebuild / view
 
@@ -34,6 +35,17 @@ position, until a barcode photo resolves the ISBN:
 4. Pale white/cream book (top of the stack)
 5. Yellow Penn & Teller book (exact title not legible)
 6. Green book under the playing cards (reads "...A OF C...")
+
+## Shelf 2 — pending identification (need a barcode photo)
+
+1. Small reddish-brown box/slipcase resting on top of *Roots of Wisdom*
+2. Grey book in the center stack reading "Questions That Ma..." (title unconfirmed)
+3. Pale book at the right end shelved spine-in (pages facing out)
+
+## Reads worth double-checking on Shelf 2
+
+- Position 16: red spine read as *Ultimate Dinosaur Dance-Off*
+- Center stack: *Pensées* (Pascal) and *Questions That Matter* are softer reads
 
 ## Reads worth double-checking on Shelf 1
 
