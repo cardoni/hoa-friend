@@ -15,7 +15,7 @@
 //   node scripts/cli.js lookup --isbn 9780132350884
 
 const db = require('../server/db');
-const { lookupByIsbn } = require('../server/lib/lookup');
+const { lookupByIsbn, lookupByTitle } = require('../server/lib/lookup');
 const { spineColorFor } = require('../server/lib/spineColor');
 
 function parseArgs(argv) {
@@ -109,6 +109,33 @@ async function main() {
 
     case 'lookup': {
       console.log(await lookupByIsbn(args.isbn));
+      break;
+    }
+
+    case 'enrich': {
+      // Fill in cover art (and ISBN where found) for every identified book
+      // that doesn't have a cover yet, using title/author search. Run this
+      // with normal internet access -- it no-ops gracefully offline.
+      const pending = db
+        .prepare(
+          "SELECT * FROM books WHERE status = 'identified' AND (cover_url IS NULL OR cover_url = '')"
+        )
+        .all();
+      console.log(`Enriching ${pending.length} book(s)...`);
+      for (const book of pending) {
+        const meta = book.isbn
+          ? await lookupByIsbn(book.isbn)
+          : await lookupByTitle(book.title, book.author);
+        const cover = meta.cover_url || meta.fallback_cover_url || null;
+        if (!cover) {
+          console.log(`  - no cover found for "${book.title}"`);
+          continue;
+        }
+        db.prepare(
+          "UPDATE books SET cover_url = ?, isbn = COALESCE(isbn, ?), author = COALESCE(author, ?), updated_at = datetime('now') WHERE id = ?"
+        ).run(cover, meta.isbn || null, meta.author || null, book.id);
+        console.log(`  + ${book.title}`);
+      }
       break;
     }
 

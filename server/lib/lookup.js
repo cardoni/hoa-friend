@@ -55,6 +55,7 @@ async function lookupByIsbn(isbn) {
     title: openLibrary?.title || google?.title || null,
     author: openLibrary?.author || google?.author || null,
     cover_url: openLibrary?.cover_url || google?.cover_url || null,
+    isbn: clean,
     // Always available without any network call -- used as the <img>
     // src as a last resort if neither API above resolved a cover, since
     // it costs nothing to try it client-side in the user's browser.
@@ -62,4 +63,44 @@ async function lookupByIsbn(isbn) {
   };
 }
 
-module.exports = { lookupByIsbn };
+// Title/author search -- used when a book was identified visually from a
+// shelf photo (so we know the title) but no barcode/ISBN was captured.
+// Lets covers populate for confidently-identified books without needing a
+// barcode photo of every single one.
+async function lookupByTitle(title, author) {
+  const q = encodeURIComponent([title, author].filter(Boolean).join(' '));
+
+  const google = await fetchJson(
+    `https://www.googleapis.com/books/v1/volumes?q=${q}&maxResults=1`
+  );
+  const gInfo = google?.items?.[0]?.volumeInfo;
+  const gIsbn = gInfo?.industryIdentifiers?.find((i) =>
+    i.type === 'ISBN_13' || i.type === 'ISBN_10'
+  )?.identifier;
+
+  const ol = await fetchJson(
+    `https://openlibrary.org/search.json?title=${encodeURIComponent(title)}` +
+      (author ? `&author=${encodeURIComponent(author)}` : '') +
+      `&limit=1&fields=title,author_name,isbn,cover_i`
+  );
+  const olDoc = ol?.docs?.[0];
+  const olCoverId = olDoc?.cover_i;
+  const olIsbn = olDoc?.isbn?.[0];
+
+  const coverUrl =
+    gInfo?.imageLinks?.thumbnail?.replace('http://', 'https://') ||
+    (olCoverId ? `https://covers.openlibrary.org/b/id/${olCoverId}-L.jpg` : null);
+
+  const resolvedIsbn = gIsbn || olIsbn || null;
+
+  return {
+    title: gInfo?.title || olDoc?.title || title,
+    author: gInfo?.authors?.join(', ') || olDoc?.author_name?.join(', ') || author || null,
+    cover_url:
+      coverUrl ||
+      (resolvedIsbn ? `https://covers.openlibrary.org/b/isbn/${resolvedIsbn}-L.jpg` : null),
+    isbn: resolvedIsbn,
+  };
+}
+
+module.exports = { lookupByIsbn, lookupByTitle };
