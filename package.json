@@ -1,0 +1,18 @@
+{
+  "name": "bookshelf",
+  "version": "1.0.0",
+  "description": "Zoomable, pannable HTML5/CSS3 virtual bookshelf, populated from photos of a real shelf.",
+  "type": "commonjs",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "cli": "node scripts/cli.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Bookshelf</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="toolbar">
+    <h1>My Bookshelf</h1>
+    <div class="toolbar-controls">
+      <span class="legend"><span class="legend-dot pending"></span> needs ISBN</span>
+      <button id="zoom-out" title="Zoom out">&minus;</button>
+      <button id="zoom-reset" title="Reset view">Reset</button>
+      <button id="zoom-in" title="Zoom in">&plus;</button>
+    </div>
+  </header>
+
+  <main id="viewport" class="viewport">
+    <div id="world" class="world">
+      <div id="shelves" class="shelves"></div>
+    </div>
+  </main>
+
+  <div id="empty-state" class="empty-state" hidden>
+    <p>No shelves yet.</p>
+    <p>Send a photo of one section of your bookshelf to populate it, in order, from top-left to bottom-right.</p>
+  </div>
+
+  <div id="book-modal" class="modal" hidden>
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-cover" id="modal-cover"></div>
+      <div class="modal-info">
+        <h2 id="modal-title"></h2>
+        <p id="modal-author" class="modal-author"></p>
+        <p id="modal-isbn" class="modal-meta"></p>
+        <p id="modal-status" class="modal-status"></p>
+        <p id="modal-note" class="modal-meta"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
