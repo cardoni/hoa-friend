@@ -12,8 +12,11 @@ machine to reconstruct the shelf.
 |-----|-------|-------------|-------|--------|
 | 1 (top) | Philosophy, Harry Potter & magic | `scripts/seed_shelf1.js` | 39 | Transcribed; 6 pending barcodes |
 | 2 | Philosophy, business & misc | `scripts/seed_shelf2.js` | 38 | Transcribed; 3 pending barcodes |
-| 3 | — | — | — | **Next up — awaiting photo** |
-| 4+ | — | — | — | Not yet photographed |
+| 3 | Recovery, philosophy & self-help | `scripts/seed_shelf3.js` | 40 | Transcribed; 3 pending barcodes |
+| 4 | — | — | — | **Next up — awaiting photo** |
+| 5+ | — | — | — | Not yet photographed |
+
+**Running totals:** 3 shelves · 117 items · 12 awaiting barcodes.
 
 ## Rebuild / view
 
@@ -46,6 +49,17 @@ position, until a barcode photo resolves the ISBN:
 
 - Position 16: red spine read as *Ultimate Dinosaur Dance-Off*
 - Center stack: *Pensées* (Pascal) and *Questions That Matter* are softer reads
+
+## Shelf 3 — pending identification (need a barcode photo)
+
+1. Row of thin dated recovery booklets/journals behind the SMART Recovery binder
+2. Gold/tan book lying flat in the back recess (reads "SAM HAR...", in shadow)
+3. White spine *Holy Man* (author possibly "Davis") — unconfirmed
+
+## Reads worth double-checking on Shelf 3
+
+- Center stack: *Felony Juggler / Penn Jillette* (orange flat book)
+- *Amazing Grace* (David Wolfe & Nick Good) and *Create-A-Book* are softer reads
 
 ## Reads worth double-checking on Shelf 1
 
