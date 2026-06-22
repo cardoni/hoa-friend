@@ -27,18 +27,20 @@ machine to reconstruct the shelf.
 | 2 | Philosophy & science | `scripts/seed_bc2_shelf2.js` | 17 | Transcribed; 2 pending |
 | 3 | Ethics, business & philosophy | `scripts/seed_bc2_shelf3.js` | 19 | Transcribed; 1 pending |
 | 4 | Philosophy of religion & reference | `scripts/seed_bc2_shelf4.js` | 12 | Transcribed; 1 pending |
-| 5 | — | — | — | **Next up — awaiting photo** |
-| 6 | — | — | — | Not yet photographed |
+| 5 | Yearbooks, logic & classics | `scripts/seed_bc2_shelf5.js` | 18 | Transcribed; 1 pending |
+| 6 | Tech, history & religion | `scripts/seed_bc2_shelf6.js` | 17 | Transcribed; 0 pending |
+
+**Bookcase 2 complete — 6 shelves.** Next bookcase not yet photographed.
 
 > Photo 7 was shot in portrait but carried an EXIF orientation flag (rotate 90°);
 > the seed scripts reflect the EXIF-corrected reading. Future bookcase-2 photos
 > are framed 2–3 rows at a time.
 
 Bookcase 2 pending (need barcodes): yellow flat-top book by *On Bullshit*
-(bc2 shelf 3); brown leather classic flat on top (bc2 shelf 4) — plus the
-two from shelves 1-2 above.
+(shelf 3); brown leather classic flat on top (shelf 4); red binder at left
+end (shelf 5) — plus the two from shelves 1-2 above.
 
-**Running totals:** 2 bookcases · 10 shelves · 296 items · 24 awaiting barcodes.
+**Running totals:** 2 bookcases · 12 shelves · 331 items · 25 awaiting barcodes.
 
 ## Rebuild / view
 
@@ -121,6 +123,8 @@ position, until a barcode photo resolves the ISBN:
 - *The Moral Landscape* (Sam Harris): on shelf 3 (center stack) and shelf 4 (vertical)
 - *Morality in Practice* (Sterba): shelf 2 (3rd ed.) and shelf 4 (6th ed.) — likely two editions
 - *Moral Minds* (Marc D. Hauser): bookcase 1 shelf 4 and bookcase 2 shelf 2 — possible duplicate
+- *Delivering Happiness* (Tony Hsieh): bookcase 1 shelf 3 and bookcase 2 shelf 5 — possible duplicate
+- *Getting Things Done* (David Allen): bookcase 1 shelf 2 and bookcase 2 shelf 5 — possible duplicate
 
 ## Reads worth double-checking on Shelf 1
 
