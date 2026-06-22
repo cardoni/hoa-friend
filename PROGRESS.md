@@ -30,7 +30,20 @@ machine to reconstruct the shelf.
 | 5 | Yearbooks, logic & classics | `scripts/seed_bc2_shelf5.js` | 18 | Transcribed; 1 pending |
 | 6 | Tech, history & religion | `scripts/seed_bc2_shelf6.js` | 17 | Transcribed; 0 pending |
 
-**Bookcase 2 complete — 6 shelves.** Next bookcase not yet photographed.
+**Bookcase 2 complete — 6 shelves.**
+
+### Bookcase 3 (skinny single-column cubby unit; mostly storage/media)
+
+Seeded by one script, `scripts/seed_bc3.js` (all 6 rows, 25 items, 2 pending).
+This unit is mostly storage — rolled posters, binders, CDs/DVDs, a spray
+bottle, chargers, LSAT prep — with a handful of trade books (As I See It,
+The Body Keeps the Score, Drugs and Rights, Refuge Recovery, Undoing Drugs,
+Arnold's bodybuilding encyclopedia). Non-book items are recorded as
+'identified' with a decor/storage note (no barcode needed).
+
+> In both photos, Bookcase 2's contents appear to the LEFT and were excluded.
+
+**Bookcase 3 complete — 6 shelves.** Next bookcase not yet photographed.
 
 > Photo 7 was shot in portrait but carried an EXIF orientation flag (rotate 90°);
 > the seed scripts reflect the EXIF-corrected reading. Future bookcase-2 photos
@@ -40,7 +53,10 @@ Bookcase 2 pending (need barcodes): yellow flat-top book by *On Bullshit*
 (shelf 3); brown leather classic flat on top (shelf 4); red binder at left
 end (shelf 5) — plus the two from shelves 1-2 above.
 
-**Running totals:** 2 bookcases · 12 shelves · 331 items · 25 awaiting barcodes.
+Bookcase 3 pending (need barcodes): the blue space-themed book and the
+marbled/colorful book in row 5 (both spines illegible).
+
+**Running totals:** 3 bookcases · 18 shelves · 356 items · 27 awaiting barcodes.
 
 ## Rebuild / view
 
